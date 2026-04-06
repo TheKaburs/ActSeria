@@ -25,3 +25,121 @@ button {
 main {
   min-height: 100vh;
 }
+
+/* --- Navbar Styles --- */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a24; 
+    padding: 15px 5%;
+    box-sizing: border-box;
+    color: white; 
+}
+
+/* --- Brand/Logo --- */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-family: "Playfair Display", "Times New Roman", serif; 
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-gold {
+    color: #d4af37;
+}
+
+
+/* --- Search & Links --- */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+/* Search Box Styling */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff; 
+    border-radius: 25px; 
+    padding: 5px 15px;
+    min-width: 250px;
+}
+
+.search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px 5px;
+    font-size: 15px;
+    outline: none; 
+}
+
+.search-input::placeholder {
+    color: #cccccc;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Navigation Links and Profile Icon */
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+ul li:hover {
+    color: #d4af37; 
+}
+
+.chevron-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #e6e6fa; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5a4b81; 
+}
+
+.profile-icon svg {
+    width: 28px;
+    height: 28px;
+}
