@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import HomePage from "../../pages/HomePage";
 import LandingPage from "../../pages/LandingPage";
 import ReaderPage from "../../pages/ReaderPage";
+import GenrePage from "../../pages/GenrePage";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +12,10 @@ export const router = createBrowserRouter([
         children: [
             {index: true, element: <LandingPage />},
             {path: "home", element: <HomePage />},
-            {path: "reader", element: <ReaderPage />}
+            {path: "reader", element: <ReaderPage />},
+            {path: "genre/:genreName?", element: <GenrePage />}
         ]
     }
-]);
+], {
+    basename: "/ActSeria/"
+});
