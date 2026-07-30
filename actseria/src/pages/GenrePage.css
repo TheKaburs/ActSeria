@@ -1,0 +1,260 @@
+.genre-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-midnight);
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+
+/* Hero Banner */
+.genre-hero-banner {
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+.btn-back-home {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0b0d17;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+.btn-back-home:hover {
+  background: #ffffff;
+  transform: translateX(-4px);
+}
+
+.genre-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 8vw, 84px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* Filter Bar */
+.genre-filter-bar {
+  margin-top: 20px;
+}
+
+.filter-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.genre-search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  padding: 8px 20px;
+  width: 320px;
+}
+
+.genre-search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.genre-search-box input::placeholder {
+  color: #8a92a6;
+}
+
+.genre-search-icon {
+  width: 18px;
+  height: 18px;
+  color: #8a92a6;
+}
+
+.genre-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sort-select {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.view-toggle-group {
+  display: flex;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.view-btn {
+  width: 36px;
+  height: 32px;
+  border-radius: 8px;
+  color: #8a92a6;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.genre-count-row {
+  font-size: 13px;
+  color: #8a92a6;
+  margin-bottom: 16px;
+}
+
+.genre-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Books Grid */
+.genre-books-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.genre-book-card {
+  height: 270px;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.genre-cover-inner {
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.genre-cover-icon {
+  font-size: 32px;
+}
+
+.genre-cover-inner h4 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.genre-cover-inner p {
+  font-size: 11px;
+  color: #a0a6b8;
+}
+
+/* List View */
+.genre-books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.genre-book-card.list-card {
+  height: auto;
+  min-height: 160px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.genre-book-card.list-card .genre-book-cover {
+  width: 120px;
+  height: 150px;
+}
+
+.genre-list-info {
+  flex: 1;
+}
+
+.genre-list-info h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.list-author {
+  font-size: 13px;
+  color: var(--color-golden-hour);
+  margin-bottom: 8px;
+}
+
+.list-desc {
+  font-size: 14px;
+  color: #a0a6b8;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  max-width: 720px;
+}
+
+.list-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+.rating-tag {
+  color: var(--color-golden-hour);
+  font-weight: 600;
+}
+
+.empty-genre-box {
+  padding: 40px;
+  text-align: center;
+  color: #a0a6b8;
+}
+
+@media (max-width: 1024px) {
+  .genre-books-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .genre-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .genre-search-box {
+    width: 100%;
+  }
+}

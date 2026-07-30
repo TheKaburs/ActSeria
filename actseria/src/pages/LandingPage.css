@@ -1,0 +1,186 @@
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 30%, #16213e 0%, #1a1a2e 70%);
+  color: #ffffff;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}
+
+/* Landing Hero */
+.landing-hero {
+  position: relative;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subheadline {
+  font-size: 16px;
+  color: #a0a6b8;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
+.hero-cta-btn {
+  font-size: 16px;
+  padding: 14px 40px;
+}
+
+/* Floating Angled Covers */
+.floating-covers-wrapper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-cover {
+  position: absolute;
+  width: 190px;
+  height: 270px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.floating-cover:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(233, 196, 106, 0.3);
+  z-index: 20;
+}
+
+.cover-border-inner {
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cover-icon {
+  font-size: 24px;
+}
+
+.floating-cover h4 {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cover-sub {
+  font-size: 8px;
+  color: #a0a6b8;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+.cover-author {
+  font-size: 9px;
+  color: #d1d5db;
+  font-weight: 600;
+}
+
+/* Landing Content Sections */
+.landing-section {
+  padding: 100px 0;
+  display: flex;
+  width: 100%;
+}
+
+/* Why Act:Seria+ Right Aligned */
+.why-section {
+  justify-content: flex-end;
+}
+
+.why-content {
+  max-width: 520px;
+  text-align: right;
+}
+
+.why-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.why-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #a0a6b8;
+}
+
+/* Read Like You Are The Character Left Aligned */
+.character-section {
+  justify-content: flex-start;
+}
+
+.character-content {
+  max-width: 540px;
+  text-align: left;
+}
+
+.character-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.character-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #a0a6b8;
+}
+
+@media (max-width: 900px) {
+  .floating-cover {
+    display: none;
+  }
+  .landing-hero {
+    min-height: 480px;
+  }
+  .why-section, .character-section {
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .why-content, .character-content {
+    text-align: center;
+  }
+}

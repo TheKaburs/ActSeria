@@ -1,23 +1,44 @@
 :root {
-  --color-bg: #0b0b12;
-  --color-surface: #131320;
-  --color-text: #f5f7ff;
-  --color-muted: #9aa3b2;
-  --color-primary: #8b5cf6;
-  --color-border: rgba(255, 255, 255, 0.08);
+  /* Brand Palette (From Brand Deck) */
+  --color-midnight: #1a1a2e;       /* Primary Background */
+  --color-deep-blue: #16213e;      /* Secondary Background / Cards / Navigation */
+  --color-story-blue: #0f3460;     /* Interactive Elements / Badges */
+  --color-golden-hour: #e9c46a;    /* Accent, Highlights & Primary CTAs */
+  --color-warm-accent: #e76f51;    /* Emotional peaks & choices */
 
-  --radius-sm: 12px;
-  --radius-md: 18px;
-  --radius-lg: 28px;
+  /* Neutral UI Tones */
+  --color-bg: #1a1a2e;
+  --color-surface: #16213e;
+  --color-surface-hover: #202a4a;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a6b8;
+  --color-text-muted: #6e768e;
 
-  --space-1: 8px;
-  --space-2: 12px;
-  --space-3: 16px;
-  --space-4: 24px;
-  --space-5: 32px;
-  --space-6: 48px;
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --container: 1200px;
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
 
-  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.18);
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Container */
+  --max-width: 1240px;
+
+  /* Elevation Shadows & Glows */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-glow-gold: 0 0 20px rgba(233, 196, 106, 0.25);
+  --shadow-glow-blue: 0 0 25px rgba(15, 52, 96, 0.4);
 }

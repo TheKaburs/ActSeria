@@ -1,0 +1,170 @@
+export const booksData = [
+    {
+        id: 'whispering-shadows',
+        title: 'The Whispering Shadows',
+        author: 'Casandra Blackwood',
+        tagline: "The Archivist's Choice",
+        year: '2025',
+        genre: 'Fantasy',
+        rating: 4.5,
+        readingTime: '6h 45m',
+        pages: 283,
+        language: 'English',
+        published: '2023',
+        publisher: 'Erlangga',
+        format: 'E-Book, Motion Text',
+        readingAge: '13+',
+        description: 'In the silent corridors of the Great Library, certain books breathe. Elias Vance discovers a manuscript that doesn\'t just tell a story—it rewrites his reality, pulling him into an ancient war of sentient shadows.',
+        coverBg: 'linear-gradient(145deg, #2b1115, #0f0406)',
+        accentColor: '#e76f51',
+        icon: '🌹',
+        chapters: [
+            { num: 4, title: 'The Vanishing World', date: '12/03/2026', duration: '14m', isLocked: true, isCompleted: false },
+            { num: 3, title: 'Magic All Does', date: '12/03/2026', duration: '14m', isLocked: false, isCompleted: false },
+            { num: 2, title: 'Did He Took The Book?', date: '12/03/2026', duration: '14m', isLocked: false, isCompleted: false },
+            { num: 1, title: "The Man Who Can't Be Moved", date: '12/03/2026', duration: '14m', isLocked: false, isCompleted: true },
+            { num: 0, title: 'The Corner Of The Street', date: '12/03/2026', duration: '14m', isLocked: false, isCompleted: true }
+        ],
+        creator: {
+            name: 'Casandra Blackwood',
+            update: 'Update From Creator: Thank you all for reading! Chapter 5 is currently in artwork production.'
+        },
+        reviews: [
+            { id: 1, user: 'Rafaiz Noor Devianof', comment: 'Kerenn banget alur cerita dan efek suaranya!', rating: 5 },
+            { id: 2, user: 'Siti Rahma', comment: 'Sangat imersif, pilihan di chapter 2 bikin kaget!', rating: 5 }
+        ]
+    },
+    {
+        id: 'ascend',
+        title: 'ASCEND',
+        author: 'Sarah Chen',
+        year: '2024',
+        genre: 'Sci-Fi',
+        rating: 4.8,
+        readingTime: '5h 20m',
+        pages: 240,
+        language: 'English',
+        published: '2024',
+        publisher: 'CyberNovels',
+        format: 'Interactive Choice',
+        readingAge: '15+',
+        description: 'Rising above the neon clouds of Neo-Jakarta, a young engineer discovers an abandoned satellite signaling in ancient Morse code.',
+        coverBg: 'linear-gradient(145deg, #d35400, #2c3e50)',
+        accentColor: '#e67e22',
+        icon: '🌅',
+        chapters: [
+            { num: 2, title: 'Signal from the Clouds', date: '10/03/2026', duration: '18m', isLocked: false, isCompleted: false },
+            { num: 1, title: 'Neo-Jakarta Sky', date: '08/03/2026', duration: '15m', isLocked: false, isCompleted: true }
+        ],
+        creator: { name: 'Sarah Chen', update: 'New audio track added to Chapter 2.' },
+        reviews: [{ id: 1, user: 'Bima 26', comment: 'Visuals and atmosphere are top tier.', rating: 5 }]
+    },
+    {
+        id: 'midnight-library',
+        title: 'The Midnight Library',
+        author: 'Matt Haig',
+        year: '2023',
+        genre: 'Fiction',
+        rating: 4.7,
+        readingTime: '7h 10m',
+        pages: 304,
+        language: 'English',
+        published: '2023',
+        publisher: 'Canongate',
+        format: 'E-Book, Audio',
+        readingAge: '16+',
+        description: 'Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.',
+        coverBg: 'linear-gradient(145deg, #16a085, #1f2c39)',
+        accentColor: '#1abc9c',
+        icon: '📖',
+        chapters: [
+            { num: 3, title: 'The Chess Board', date: '01/03/2026', duration: '12m', isLocked: false, isCompleted: false },
+            { num: 2, title: 'Parallel Lives', date: '28/02/2026', duration: '16m', isLocked: false, isCompleted: true }
+        ],
+        creator: { name: 'Matt Haig', update: 'Mindful reading session available now.' },
+        reviews: [{ id: 1, user: 'Rina Seeker', comment: 'Made me reflect on life choices deeply.', rating: 5 }]
+    },
+    {
+        id: 'chronicles',
+        title: 'The Chronicles',
+        author: 'Aria Thorne',
+        year: '2025',
+        genre: 'Fantasy',
+        rating: 4.6,
+        readingTime: '8h 15m',
+        pages: 350,
+        language: 'English',
+        published: '2025',
+        publisher: 'Arcane Press',
+        format: 'Motion Text',
+        readingAge: '13+',
+        description: 'Deep in the whispers of the elder wood, a forgotten relic awakens to protect the realm from encroaching twilight.',
+        coverBg: 'linear-gradient(145deg, #1e8449, #112518)',
+        accentColor: '#2ecc71',
+        icon: '🌿',
+        chapters: [{ num: 1, title: 'The Elder Wood', date: '14/03/2026', duration: '20m', isLocked: false, isCompleted: false }],
+        creator: { name: 'Aria Thorne', update: 'Welcome to the world of Chronicles!' },
+        reviews: []
+    },
+    {
+        id: 'fractured-mind',
+        title: 'The Fractured Mind',
+        author: 'Cassandra Blackwood',
+        year: '2025',
+        genre: 'Thriller',
+        rating: 4.9,
+        readingTime: '6h 00m',
+        pages: 260,
+        language: 'Indonesian',
+        published: '2025',
+        publisher: 'Gramedia',
+        format: 'Interactive Choice',
+        readingAge: '17+',
+        description: 'Sebuah eksperimen psikologi di Bandung membawa peserta terjebak dalam labirin ingatan palsu dan teka-teki moral.',
+        coverBg: 'linear-gradient(145deg, #2c3e50, #000000)',
+        accentColor: '#95a5a6',
+        icon: '🧠',
+        chapters: [{ num: 1, title: 'Laboratorium Gelap', date: '11/03/2026', duration: '15m', isLocked: false, isCompleted: false }],
+        creator: { name: 'Cassandra Blackwood', update: 'Rilis bab baru minggu depan!' },
+        reviews: [{ id: 1, user: 'Dewi', comment: 'Bikin merinding dan susah berhenti baca!', rating: 5 }]
+    },
+    {
+        id: 'dragon-ascent',
+        title: 'Dragon Ascent',
+        author: 'Kenji Sato',
+        year: '2026',
+        genre: 'Action',
+        rating: 4.4,
+        readingTime: '9h 30m',
+        pages: 410,
+        language: 'English',
+        published: '2026',
+        publisher: 'Dragonfire Pub',
+        format: 'E-Book, Animation',
+        readingAge: '14+',
+        description: 'The ancient dragons have returned to the peaks of Mount Rinjani. Only those who master the elemental flutes can tame them.',
+        coverBg: 'linear-gradient(145deg, #b7950b, #4a235a)',
+        accentColor: '#f1c40f',
+        icon: '🐉',
+        chapters: [{ num: 1, title: 'Rinjani Awakens', date: '15/03/2026', duration: '22m', isLocked: false, isCompleted: false }],
+        creator: { name: 'Kenji Sato', update: 'Dragon animations completed.' },
+        reviews: []
+    }
+];
+
+export const continueReadingData = [
+    { id: 'oriel', title: 'Echoes of Oriel', chapterInfo: 'Chapter 14 of 26', color: '#16a085', icon: '🌊' },
+    { id: 'alchemist', title: "The Alchemist's Debt", chapterInfo: 'Chapter 3 of 15', color: '#d4ac0d', icon: '📜' },
+    { id: 'crimson', title: 'Crimson Skyline', chapterInfo: 'Chapter 22 of 24', color: '#c0392b', icon: '🌆' }
+];
+
+export const genresData = [
+    { id: 'biography', name: 'Biography', icon: '🖋️', bg: 'linear-gradient(135deg, #4a3b32, #1a1410)' },
+    { id: 'fantasy', name: 'Fantasy', icon: '🌀', bg: 'linear-gradient(135deg, #1b4f72, #0b1d2c)' },
+    { id: 'fiction', name: 'Fiction', icon: '📖', bg: 'linear-gradient(135deg, #512e5f, #1f1124)' },
+    { id: 'history', name: 'History', icon: '📜', bg: 'linear-gradient(135deg, #6e2c00, #271000)' },
+    { id: 'mystery', name: 'Mystery', icon: '🔮', bg: 'linear-gradient(135deg, #17202a, #080c10)' },
+    { id: 'romance', name: 'Romance', icon: '🌹', bg: 'linear-gradient(135deg, #78281f, #2c0e0b)' },
+    { id: 'sci-fi', name: 'Sci-Fi', icon: '🛸', bg: 'linear-gradient(135deg, #1b2631, #0d1319)' },
+    { id: 'thriller', name: 'Thriller', icon: '👁️', bg: 'linear-gradient(135deg, #117864, #062b24)' }
+];

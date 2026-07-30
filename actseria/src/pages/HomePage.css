@@ -1,0 +1,336 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-midnight);
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+
+.home-section {
+  margin-top: 60px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 36px);
+  color: #ffffff;
+}
+
+.section-sub {
+  font-size: 13px;
+  color: #8a92a6;
+  margin-top: 4px;
+  display: block;
+}
+
+.flex-between {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btn-link-all {
+  color: #8a92a6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-link-all:hover {
+  color: var(--color-golden-hour);
+}
+
+.btn-sm {
+  padding: 6px 16px;
+  font-size: 13px;
+}
+
+/* 1. Archivist Hero Banner */
+.archivist-hero {
+  padding-top: 32px;
+}
+
+.archivist-banner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  padding: 48px 56px;
+  background: linear-gradient(135deg, rgba(62, 39, 35, 0.7) 0%, rgba(22, 33, 62, 0.9) 100%),
+              url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80') center/cover;
+  background-blend-mode: overlay;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  align-items: center;
+}
+
+.archivist-tag {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-golden-hour);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.archivist-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 8px 0 16px;
+  color: #ffffff;
+}
+
+.archivist-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d1d5db;
+  max-width: 540px;
+  margin-bottom: 28px;
+}
+
+.archivist-btn-group {
+  display: flex;
+  gap: 16px;
+}
+
+.archivist-cover-wrapper {
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.archivist-3d-cover {
+  width: 240px;
+  height: 330px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(233, 196, 106, 0.2);
+  transform: rotateY(-12deg) rotateX(6deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.archivist-cover-wrapper:hover .archivist-3d-cover {
+  transform: rotateY(0deg) scale(1.04);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(233, 196, 106, 0.4);
+}
+
+/* 2. Continue Reading */
+.continue-reading-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.continue-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+.continue-thumb {
+  width: 540px;
+  width: 60px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.continue-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.continue-info p {
+  font-size: 12px;
+  color: #8a92a6;
+  margin-bottom: 8px;
+}
+
+.btn-resume {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-golden-hour);
+  letter-spacing: 0.05em;
+}
+
+.btn-resume:hover {
+  text-decoration: underline;
+}
+
+/* 3. Trending Now Grid */
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.trending-card {
+  height: 250px;
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.trending-card-inner {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trending-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.trending-card h3 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.trending-author {
+  font-size: 11px;
+  color: #a0a6b8;
+  margin-bottom: 6px;
+}
+
+.trending-rating {
+  font-size: 11px;
+  color: var(--color-golden-hour);
+  font-weight: 600;
+}
+
+/* 4. Literary Classics Banner */
+.classics-banner-section {
+  margin-top: 64px;
+}
+
+.classics-banner {
+  padding: 56px;
+  background: linear-gradient(135deg, rgba(141, 53, 34, 0.7) 0%, rgba(22, 33, 62, 0.9) 100%),
+              url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80') center/cover;
+  background-blend-mode: overlay;
+  border-radius: 28px;
+}
+
+.classics-curated {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #e76f51;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.classics-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 8px 0 12px;
+  color: #ffffff;
+}
+
+.classics-content p {
+  font-size: 15px;
+  color: #d1d5db;
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.classics-meta {
+  display: block;
+  font-size: 12px;
+  color: #a0a6b8;
+  margin-bottom: 24px;
+}
+
+.classics-cta {
+  background: #e76f51;
+  color: #ffffff;
+}
+
+.classics-cta:hover {
+  background: #f08266;
+}
+
+/* 5. Browse By Genre Grid */
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.genre-card {
+  height: 140px;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.genre-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-golden-hour);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.genre-card.active {
+  border-color: var(--color-golden-hour);
+  box-shadow: var(--shadow-glow-gold);
+}
+
+.genre-icon {
+  font-size: 28px;
+}
+
+.genre-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .trending-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .continue-reading-grid {
+    grid-template-columns: 1fr;
+  }
+  .genres-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .archivist-banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .genres-grid {
+    grid-template-columns: 1fr;
+  }
+}
