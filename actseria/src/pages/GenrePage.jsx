@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { booksData } from '../data/booksData';
 import BookDetailModal from '../components/ui/BookDetailModal';
 import './GenrePage.css';

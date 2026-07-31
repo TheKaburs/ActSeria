@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { booksData, continueReadingData, genresData } from '../data/booksData';
 import BookDetailModal from '../components/ui/BookDetailModal';
 import './HomePage.css';

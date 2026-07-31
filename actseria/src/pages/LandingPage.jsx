@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import './LandingPage.css';
 
 // SVG or Stylized CSS Covers for 1:1 reproduction
