@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import HomePage from "../../pages/HomePage";
 import LandingPage from "../../pages/LandingPage";
 import ReaderPage from "../../pages/ReaderPage";
 import GenrePage from "../../pages/GenrePage";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <MainLayout />,
@@ -17,5 +17,5 @@ export const router = createBrowserRouter([
         ]
     }
 ], {
-    basename: "/ActSeria/"
+
 });
